@@ -8,7 +8,7 @@ http://bids.neuroimaging.io
 
 https://www.nature.com/articles/sdata201644
 
-In short, input data needs to have this strcuture: <data_dir>/sub<subject_id>/anat/<subject_id>_T1w.nii.gz
+In short, input data needs to have this folder structure: <data_dir>/sub<subject_id>/anat/<subject_id>_T1w.nii.gz
 
 ## Build instructions
 docker build -t lifebrain-fs-structural .
