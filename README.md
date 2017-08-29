@@ -1,1 +1,1 @@
-# lifebrain-fs-structural
+# Docker image for lifebrain structtural processing
