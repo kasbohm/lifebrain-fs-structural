@@ -146,8 +146,9 @@ Added mkdir /cluster /tsd (UiO cluster specific needs)
 Updated freesurfer license for lifebrain
 
 ## Acknowledgements
-Cloned from https://github.com/BIDS-Apps/freesurfer
-Thanks!
+Repo cloned from https://github.com/BIDS-Apps/freesurfer. 
+
+Thank you!
 
 Freesurfer:
 https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferMethodsCitation
