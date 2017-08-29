@@ -1,6 +1,6 @@
 # Docker image for Lifebrain structural processing
 
-This app implements surface reconstruction using Freesurfer. It reconstructs the surface for each subject individually and then creates a study specific template. In case there are multiple sessions the Freesurfer longitudinal pipeline is used (creating subject specific templates) unless instructed to combine data across sessions. The current Freesurfer version is based on: freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.0.tar.gz
+This app implements surface reconstruction using Freesurfer. It reconstructs the surface for each subject individually and then creates summary stats files. In case there are multiple sessions the Freesurfer longitudinal pipeline is used (creating subject specific templates) unless instructed to combine data across sessions. The current version is based freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.0.tar.gz
 
 The app requires data to be formatted according to the BIDS specification: 
 
@@ -14,7 +14,6 @@ In short, input data needs to adhere to this folder structure: <data_dir>/sub<su
 	$ docker build -t lifebrain-fs-structural .
 
 ### Convert docker image to singularity for HPC processing
-
 	$ docker run \
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	-v ./singularity:/output \
