@@ -130,13 +130,16 @@ To export tables with aggregated measurements within regions of cortical parcell
 	/bids_dataset /outputs group2 
 
 
-## __________________________________________
-## Changes from original BIDS-app: 
-Modified defaults in run.py
 
-Dockerfile:
+## Changes from original BIDS-app: 
+### run.py: 
+Modified defaults
+removed required license argument
+If you use this software outside of Lifebrain, please register for a license at https://surfer.nmr.mgh.harvard.edu/fswiki/License
+
+### Dockerfile
 Added mkdir /cluster /tsd (UiO cluster specific needs)
-Updated freesurfer license for lifebrain and removed required license argument. If you use this software outside of Lifebrain, please register for a license at https://surfer.nmr.mgh.harvard.edu/fswiki/License
+Updated freesurfer license for lifebrain
 
 ## Acknowledgements
 Cloned from https://github.com/BIDS-Apps/freesurfer
