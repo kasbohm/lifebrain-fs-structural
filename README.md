@@ -140,6 +140,7 @@ If you use this software outside of Lifebrain, please register for a license at 
 
 ### Dockerfile
 Added mkdir /cluster /tsd (UiO cluster specific needs)
+
 Updated freesurfer license for lifebrain
 
 ## Acknowledgements
