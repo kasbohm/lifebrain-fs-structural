@@ -103,6 +103,7 @@ The App has the following command line arguments:
                             [{area,volume,thickness,thicknessstd,meancurv,gauscurv,foldind,curvind} ...]
                             Group2 option: cortical measurements to extract stats for.
       -v, --version         show program's version number and exit
+      
 Participant level
 
 To run it in participant level mode (for one participant):
@@ -112,17 +113,10 @@ To run it in participant level mode (for one participant):
 	-v /Users/filo/outputs:/outputs \
 	bids/freesurfer \
 	/bids_dataset /outputs participant --participant_label 01 
-Group level
+
 
 After doing this for all subjects (potentially in parallel) the group level analyses can be run.
 
-To create a study specific template run:
-
-	docker run -ti --rm \
-	-v /Users/filo/data/ds005:/bids_dataset:ro \
-	-v /Users/filo/outputs:/outputs \
-	bids/freesurfer \
-	/bids_dataset /outputs group1 
 To export tables with aggregated measurements within regions of cortical parcellation and subcortical segementation run:
 
 	docker run -ti --rm \
