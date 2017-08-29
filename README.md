@@ -1,5 +1,5 @@
 # Docker image for Lifebrain structural processing
-##Description
+## Description
 This app implements surface reconstruction using Freesurfer. It reconstructs the surface for each subject individually and then creates a study specific template. In case there are multiple sessions the Freesurfer longitudinal pipeline is used (creating subject specific templates) unless instructed to combine data across sessions. The current Freesurfer version is based on: freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.0.tar.gz
 
 The app requires data to be formatted according to the BIDS specification: 
@@ -23,7 +23,7 @@ lifebrain-fs-structural
 The (singularity) app is tested and working on the UiO Colossus Slurm cluster 
 (note to self: need to force home dir with -H /path/) 
 
-##Usage
+## Usage
 The App has the following command line arguments:
 
     $ docker run -ti --rm bids/freesurfer --help
@@ -130,15 +130,15 @@ To export tables with aggregated measurements within regions of cortical parcell
 	/bids_dataset /outputs group2 
 
 
-__________________________________________
-Changes from original BIDS-app: 
+## __________________________________________
+## Changes from original BIDS-app: 
 Modified defaults in run.py
 
 Dockerfile:
 Added mkdir /cluster /tsd (UiO cluster specific needs)
 Updated freesurfer license for lifebrain and removed required license argument. If you use this software outside of Lifebrain, please register for a license at https://surfer.nmr.mgh.harvard.edu/fswiki/License
 
-###Acknowledgements
+## Acknowledgements
 Cloned from https://github.com/BIDS-Apps/freesurfer
 Thanks!
 
