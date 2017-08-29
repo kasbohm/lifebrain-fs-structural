@@ -11,16 +11,16 @@ https://www.nature.com/articles/sdata201644
 In short, input data needs to have this folder structure: <data_dir>/sub<subject_id>/anat/<subject_id>_T1w.nii.gz
 
 ## Build instructions
-docker build -t lifebrain-fs-structural .
+	$ docker build -t lifebrain-fs-structural .
 
 ## Convert docker image to singularity for HPC processing
 
-docker run \
--v /var/run/docker.sock:/var/run/docker.sock \
--v ./singularity:/output \
---privileged -t --rm \
-singularityware/docker2singularity \
-lifebrain-fs-structural
+	$ docker run \
+	-v /var/run/docker.sock:/var/run/docker.sock \
+	-v ./singularity:/output \
+	--privileged -t --rm \
+	singularityware/docker2singularity \
+	lifebrain-fs-structural
 
 The (singularity) app is tested and working on the UiO Colossus Slurm cluster 
 (note to self: need to force home dir with -H /path/) 
