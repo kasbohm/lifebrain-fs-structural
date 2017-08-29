@@ -13,7 +13,7 @@ In short, input data needs to have this folder structure: <data_dir>/sub<subject
 ## Build instructions
 	$ docker build -t lifebrain-fs-structural .
 
-## Convert docker image to singularity for HPC processing
+### Convert docker image to singularity for HPC processing
 
 	$ docker run \
 	-v /var/run/docker.sock:/var/run/docker.sock \
