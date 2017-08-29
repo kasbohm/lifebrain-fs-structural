@@ -3,9 +3,7 @@
 This app implements surface reconstruction using Freesurfer. It reconstructs the surface for each subject individually and then creates a study specific template. In case there are multiple sessions the Freesurfer longitudinal pipeline is used (creating subject specific templates) unless instructed to combine data across sessions. The current Freesurfer version is based on: freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.0.tar.gz
 
 The app requires data to be formatted according to the BIDS specification: 
-
 http://bids.neuroimaging.io
-
 https://www.nature.com/articles/sdata201644
 
 In short, input data needs to have this strcuture: <data_dir>/sub<subject_id>/anat/<subject_id>_T1w.nii.gz
