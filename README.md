@@ -134,6 +134,7 @@ To export tables with aggregated measurements within regions of cortical parcell
 ## Changes from original BIDS-app: 
 ### run.py: 
 Modified defaults
+
 removed required license argument
 If you use this software outside of Lifebrain, please register for a license at https://surfer.nmr.mgh.harvard.edu/fswiki/License
 
