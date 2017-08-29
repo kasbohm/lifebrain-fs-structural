@@ -141,7 +141,7 @@ removed required license argument
 If you use this software outside of Lifebrain, please register for a license at https://surfer.nmr.mgh.harvard.edu/fswiki/License
 
 ### Dockerfile
-Added mkdir /cluster /tsd (UiO cluster specific needs)
+Added mkdir /cluster /tsd /work /projects (UiO cluster specific needs)
 
 Updated freesurfer license for lifebrain
 
